@@ -94,7 +94,7 @@ def stream_logs():
             logs = f.read()[-5000:]  # Show last 5000 characters
     return render_template_string(html, logs=logs)
 
-if __name__ == 'main':
+if __name__ == '__main__':
     import os
     port = int(os.environ.get('PORT', 10000))  # Render sets PORT environment variable
     app.run(host='0.0.0.0', port=port)
