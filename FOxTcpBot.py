@@ -198,7 +198,7 @@ import requests
 def send_likes(uid):
     try:
         likes_api_response = requests.get(
-            f"https://a-like-api.vercel.app/like-madara?uid={uid}&server_name=ind"
+            f"http://ghost-x-like-api.vercel.app/like?uid={uid}&server_name=ind"
         )
         
         message = ("""
