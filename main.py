@@ -2,7 +2,7 @@ from flask import Flask, Response, render_template_string
 import subprocess
 import os
 
-app = Flask (ban)
+app = Flask (__name__)
 process = None
 
 @app.route('/')
@@ -94,5 +94,5 @@ def stream_logs():
             logs = f.read()[-5000:]  # Show last 5000 characters
     return render_template_string(html, logs=logs)
 
-if ban == 'main':
+if __name__ == 'main':
     app.run(debug=True)
