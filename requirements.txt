@@ -9,3 +9,4 @@ protobuf-decoder
 protobuf
 google
 urllib3
+Flask
