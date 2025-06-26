@@ -2,7 +2,7 @@ from flask import Flask, Response, render_template_string
 import subprocess
 import os
 
-app = Flask(__name__)
+app = Flask (name)
 process = None
 
 @app.route('/')
